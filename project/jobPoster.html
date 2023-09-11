@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a job</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background-color:#f3f3f3">
+  <div class="container bg-white shadow rounded" style="width:1000px; margin-top:150px; margin-bottom:300px">
+    <h1>Post a Job</h1>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-10">
+        <form action="jobPostHandler.php" method="post">
+          <div class="pt-4 form-group">
+            <label class="pb-2 ps-1" for="companyName"> Company Name: </label>
+            <input type="text" class="form-control shadow-sm" name="companyName"
+              placeholder="Enter name of the company">
+          </div>
+          <div class="pt-4 form-group">
+            <label class="pb-2 ps-1" for="jobTitle"> Job Title: </label>
+            <input type="text" class="form-control shadow-sm" name="jobTitle" placeholder="Enter title of the job">
+          </div>
+          <div class="pt-4 form-group">
+            <label class="pb-2 ps-1" for="jobLocation"> Job Location: </label>
+            <input type="text" class="form-control shadow-sm" name="jobLocation"
+              placeholder="Enter location of the job">
+          </div>
+          <div class="pt-4 form-group">
+            <label class="pb-2 ps-1" for="jobCategory"> Job Category: </label>
+            <select class="form-select ps-3" name="category" aria-label="size 5">
+              <option value="1">Engineers/Architects</option>
+              <option value="2">IT & Telecommunications</option>
+              <option value="3">Marketing/Sales</option>
+            </select>
+          </div>
+          <div class="pt-4 form-group">
+            <label class="pb-2 ps-1" for="vacancy"> Vacancy: </label>
+            <input type="number" class="form-control shadow-sm" name="vacancy" style="width:35%"
+              placeholder="No. of Vacancy">
+          </div>
+          <div class="pt-4 form-group">
+            <label class="pb-2 ps-1" for="jobContext"> Job Context: </label>
+            <textarea class="form-control shadow-sm" name="jobContext" rows="3" cols="100"
+              placeholder="Enter context of the job"></textarea>
+          </div>
+          <div class="pt-4 form-group">
+            <label class="pb-2 ps-1" for="jobRes"> Job Responsibility: </label>
+            <textarea class="form-control shadow-sm" name="jobRes" rows="5" cols="100"
+              placeholder="Enter primary responsibilities"></textarea>
+          </div>
+          <div class="pt-4 form-group">
+            <label class="pb-2 ps-1" for="eduReq"> Educational Requirements: </label>
+            <textarea class="form-control shadow-sm" name="eduReq" rows="2" cols="100"
+              placeholder="Enter educational requirements"></textarea>
+          </div>
+          <div class="pt-4 form-group">
+            <label class="pb-2 ps-1" for="expReq"> Experience Requirements: </label>
+            <textarea class="form-control shadow-sm" name="expReq" rows="3" cols="100"
+              placeholder="Enter required experience"></textarea>
+          </div>
+          <div class="pt-4 form-group">
+            <label class="pb-2 ps-1" for="addReq"> Additional Requirements: </label>
+            <textarea class="form-control shadow-sm" name="addReq" rows="4" cols="100"
+              placeholder="Enter any additional requirements"></textarea>
+          </div>
+          <div class="pt-4 form-group">
+            <label class="pb-2 ps-1" for="salary"> Salary(per month): </label>
+            <input type="number" class="form-control shadow-sm" name="salary" placeholder="Enter estimated salary">
+          </div>
+          <div class="pt-4 form-group">
+            <label class="pb-2 ps-1" for="otherInfo"> Other Information: </label>
+            <textarea class="form-control shadow-sm" name="otherInfo" rows="7" cols="100"
+              placeholder="Enter any other requiremets if applicable"></textarea>
+          </div>
+          <div class="pt-4 form-group">
+            <label class="pb-2 ps-1" for="cvMail"> Email for CV submission: </label>
+            <input type="email" class="form-control shadow-sm" name="cvMail"
+              placeholder="Enter email to contact with CV">
+          </div>
+          <div class="pt-4">
+            <label class="pb-2 ps-1" for="deadline"> Application Deadline: </label><br>
+            <input type="date" name="appDeadline" style="width:330px; height:50px; font-size:18px ;" required>
+          </div>
+          <div class="pb-5" style="padding-top:75px;">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

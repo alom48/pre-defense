@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="Registration.css">
+
+</head>
+
+
+
+
+<body>
+    <h1>Registration</h1>
+
+    <div class="form">
+        <form action="registrationaction.php" method="post">
+            <!-- <form onsubmit="return signUpVal()" action="home.html"> -->
+            <!-- <form onsubmit="return signUpVal()"> -->
+            <table>
+                <tr>
+                    <td><label for="fname">First Name&nbsp;:</label></td>
+                    <td><input type="text" placeholder="First Name" id="fname" name="fname">
+                        <!-- <span class="error" id="efname"></span> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last Name&nbsp;:</label></td>
+                    <td><input type="text" placeholder="Last Name" id="lname" name="lname">
+                        <!-- <span class="error" id="elname"></span> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email :</label></td>
+                    <td><input type="email" placeholder="Email" name="email" id="email" required>
+                        <!-- <span class="error" id="eemail">lpopop</span> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Mobile&nbsp;:</label></td>
+                    <td><input type="number" placeholder="Number" id="mobile" name="mobile" required>
+                        <!-- <span class="error" id="emobile"></span> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password&nbsp;:</label></td>
+                    <td><input type="password" placeholder="Password" id="pass" name="pass" required>
+                        <!-- <span class="error" id="epass"></span> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="cpass">Confirm Password&nbsp;:</label></td>
+                    <td><input type="password" placeholder="Confirm Password" id="cpass" name="cpass">
+                        <!-- <span class="error" id="ecpass"></span> -->
+                    </td>
+                </tr>
+                <tr style="text-align:right">
+                    <td colspan="2">
+
+
+                        <button type="submit" name="send" class="btn btn-primary col-12"
+                            style="background-color: #333; border-color: #333">Register</button>
+                    </td>
+
+                </tr>
+
+            </table>
+            Already have an account ? <a href=" login.php">Login</a>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

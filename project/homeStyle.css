@@ -1,0 +1,32 @@
+a:link {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#header {
+    font-size: 46px;
+}
+
+.footer {
+    background-color: black;
+    border-top: var(--border);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2.5rem 2rem;
+    color: white;
+    margin-top: 1rem;
+    z-index: 1000;
+}
+
+.footer span {
+    color: var(--main-color);
+}
